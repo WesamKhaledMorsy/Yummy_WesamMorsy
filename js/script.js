@@ -165,7 +165,8 @@ $('.home-side-list ul li a').click(function (e) {
         $('#mealDetails').removeClass('show'); 
         $('#area').addClass('show');
         $('#ingredients').removeClass('show'); 
-        $('#contact').removeClass('show');       
+        $('#contact').removeClass('show');      
+        $('#mealsCategory').removeClass('show'); 
         getAllAreas();
     }else  if(hrefAttrOfSideBar === 'ingredients'){
         $('#search').removeClass('show');
@@ -174,6 +175,7 @@ $('.home-side-list ul li a').click(function (e) {
         $('#area').removeClass('show'); 
         $('#ingredients').addClass('show');
         $('#contact').removeClass('show');
+        $('#mealsCategory').removeClass('show');
         getAllIngredients();
     }else if(hrefAttrOfSideBar === 'contact'){
         $('#contact').addClass('show');
@@ -181,6 +183,8 @@ $('.home-side-list ul li a').click(function (e) {
         $('#category').removeClass('show'); 
         $('#mealDetails').removeClass('show'); 
         $('#area').removeClass('show'); 
+        $('#mealsArea').removeClass('show');
+        $('#mealsCategory').removeClass('show');
         $('#ingredients').removeClass('show');
     }
 });
@@ -357,7 +361,7 @@ async function getAllAreas(){
         for (let i = 0; i < meals.length; i++) {
             cartoona +=`
             <div class="col-md-3 rounded rounded-3" onclick="getAllMealsByAreaName('${meals[i].strArea}')">
-                                <img src="../images/home.png" alt="home" class="w-100">
+                                <img src="./images/home.png" alt="home" class="w-100">
                             <div class="area-layer text-center">
                                 <h3>${meals[i].strArea}</h3>
                             </div>
