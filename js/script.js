@@ -100,7 +100,6 @@ async function searchAboutMealByName(name){
             })
         }
     } catch (error) {
-        debugger
         $('#loading').show();
     }
    
