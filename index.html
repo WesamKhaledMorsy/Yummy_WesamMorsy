@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <main>
+        <div id="loading">
+        <!-- <div class="d-flex justify-content-center align-items-center vh-100"> -->
+            <span class="loader"></span>
+        <!-- </div> -->
+        </div>        
+        <div class="home-side">
+            <div class="home-side-list">
+                <ul>
+                    <li><a class="nav" href="#search"> Search</a></li>
+                    <li><a class="nav" href="#categories">Categories</a></li>
+                    <li><a class="nav" href="#area">Area</a></li>
+                    <li><a class="nav" href="#ingredients">Ingredients</a></li>
+                    <li><a class="nav" href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="home-side-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"> <i class="fa-solid fa-globe"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>Copyright Â© 2019 All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="open">
+            <div class="logo-div">
+                <img src="./images/logo.png" alt="food" class="img-fluid">
+            </div>
+            <div class="icons-open-close">
+                <img src="./images/close.png" alt="close" id="closeSideBar" class="img-fluid">
+                <img src="./images/list-icon.webp" alt="close" id="openSideBar" class="img-fluid">
+            </div>
+            <div class="web-icons">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-share-nodes"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="search" class="show">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-12 pb-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control my-1" placeholder="search by meal name"
+                                    id="meal_Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control my-1" placeholder="search by first letter"
+                                    id="firstLetter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" id="mealsList">
+                        <div class="row g-4 ">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="category">
+            <div class="container p-4 " id="CategoriesList">
+                <div class="row g-4 ">
+                
+                </div>
+            </div>
+        </section>
+        <section id="mealsCategory">
+            <div class="container p-4" id="meal_Category">
+                <div class="row g-3">
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="mealDetails">
+            <div class="container" id="meal_info">
+                <div class="row g-2 text-light">
+                
+                </div>
+        </section>
+        <section id="area">
+            <div class="container py-4" id="meal_area">
+                <div class="row g-3">
+                
+                </div>
+            </div>
+        </section>
+        <section id="mealsArea">
+            <div class="container p-4" id="mealsAreaList">
+                <div class="row g-3">
+
+                </div>
+            </div>
+        </section>
+        <section id="ingredients">
+            <div class="container py-4 text-light" id="meal_ingredients">
+                <div class="row g-3 text-center">
+                
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <input type="text" name="fname" id="Fname" placeholder="Enter your first name" class="form-control">
+                        <p class="py-3 px-2 my-2 nameMessage d-none">Special characters and numbers not allowed</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" id="yourMail" placeholder="Enter your email" class="form-control">                        
+                        <p class="py-3 px-2 my-2 emailMessage d-none">Email not valid *exemple@yyy.zzz</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="phone" id="phone" placeholder="Enter your Phone" class="form-control">
+                        <p class="py-3 px-2 my-2 phoneMessage d-none">Enter a valid Phone Number 01098293074 / +201098293074</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" name="age" id="age" placeholder="Enter your age " class="form-control">
+                        <p class="py-3 px-2 my-2 ageMessage d-none">Enter a valid age > 10 </p>                         
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" name="Password" id="myPassword" placeholder="Enter your password " class="form-control">
+                        <!-- <div class="eyeIcon">
+                            <i class="fa-solid fa-eye text-light" onclick="viewPassword()"></i>
+                        </div>     -->
+                        <p class="py-3 px-2 my-2 passwordMessage d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>                         
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" name="RePassword" id="RePassword" placeholder="RePassword" class="form-control">
+                        <p class="py-3 px-2 my-2 rePasswordMessage d-none">Enter valid repassword</p>                         
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn submitBtn">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
